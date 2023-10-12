@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="sample.unit.CafeKioskTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-12T05:14:14" hostname="DESKTOP-GITLL87" time="0.116">
+<testsuite name="sample.unit.CafeKioskTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-12T07:56:14" hostname="DESKTOP-GITLL87" time="0.116">
   <properties/>
-  <testcase name="clear_manual_test()" classname="sample.unit.CafeKioskTest" time="0.116"/>
+  <testcase name="addZeroBeverages()" classname="sample.unit.CafeKioskTest" time="0.116"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
