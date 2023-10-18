@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae75a70a-628e-4773-b5c2-f2eaec16974a" name="Changes" comment="단위테스트 / 테스트 케이스 세분화하기&#10;&#10;테스트 케이스는 경계값을 나눠서 테스트 해야한다.&#10;예를 들어 0~2범위라면 0인 값과 2인값에서 테스트를 하고 예외처리에 대해서도 고민해야 한다. 이번 코드에선 assertThatThrownBy를 써서 예외를 처리했다.">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="ae75a70a-628e-4773-b5c2-f2eaec16974a" name="Changes" comment="단위테스트 / 테스트하기 어려운영역&#10;&#10;1 관측할 때마다 다른 값에 의존하는 코드&#10;현재 날짜/시간, 랜덤 값, 전역 변수/함수, 사용자 입력 등&#10;2 외부 세계에 영향을 주는 코드&#10;표준 출력, 메시지 발송, 데이터베이스에 기록하기 등">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/executionHistory/executionHistory.lock" afterDir="false" />
@@ -14,16 +13,13 @@
       <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/build/classes/java/main/sample/unit/CafeKiosk.class" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/classes/java/main/sample/unit/CafeKiosk.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/build/classes/java/test/sample/unit/CafeKioskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/classes/java/test/sample/unit/CafeKioskTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/classes/sample.unit.CafeKioskTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/classes/sample.unit.CafeKioskTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/packages/sample.unit.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/packages/sample.unit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/build/test-results/test/TEST-sample.unit.CafeKioskTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/test-results/test/TEST-sample.unit.CafeKioskTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/unit/CafeKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/main/java/sample/unit/CafeKiosk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/unit/CafeKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/unit/CafeKioskTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +89,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/-/Downloads/cafekiosk&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/-/Downloads/restful-web-services&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -106,7 +102,7 @@
       <recent name="sample.unit" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CafeKioskTest.createOrderOutsideOpenTime">
+  <component name="RunManager" selected="Gradle.CafeKioskTest.calculateTotalPrice">
     <configuration name="CafeKioskTest.addZeroBeverages" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -130,7 +126,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CafeKioskTest.clear_manual_test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CafeKioskTest.calculateTotalPrice" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/cafekiosk" />
@@ -143,7 +139,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;sample.unit.CafeKioskTest.clear_manual_test&quot;" />
+            <option value="&quot;sample.unit.CafeKioskTest.calculateTotalPrice&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -224,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CafeKioskTest.calculateTotalPrice" />
         <item itemvalue="Gradle.CafeKioskTest.createOrderOutsideOpenTime" />
         <item itemvalue="Gradle.CafeKioskTest.createOrderWithCurrentTime" />
         <item itemvalue="Gradle.CafeKioskTest.createOrder" />
         <item itemvalue="Gradle.CafeKioskTest.addZeroBeverages" />
-        <item itemvalue="Gradle.CafeKioskTest.clear_manual_test" />
       </list>
     </recent_temporary>
   </component>
@@ -262,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697097473346</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="단위테스트 / 테스트하기 어려운영역&#10;&#10;1 관측할 때마다 다른 값에 의존하는 코드&#10;현재 날짜/시간, 랜덤 값, 전역 변수/함수, 사용자 입력 등&#10;2 외부 세계에 영향을 주는 코드&#10;표준 출력, 메시지 발송, 데이터베이스에 기록하기 등">
+      <created>1697157857893</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697157857893</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,6 +295,7 @@
     <MESSAGE value="start! 카페 키오스크를 통한 테스트 코드 연습" />
     <MESSAGE value="단위테스트 / JUnit5로 테스트하기" />
     <MESSAGE value="단위테스트 / 테스트 케이스 세분화하기&#10;&#10;테스트 케이스는 경계값을 나눠서 테스트 해야한다.&#10;예를 들어 0~2범위라면 0인 값과 2인값에서 테스트를 하고 예외처리에 대해서도 고민해야 한다. 이번 코드에선 assertThatThrownBy를 써서 예외를 처리했다." />
-    <option name="LAST_COMMIT_MESSAGE" value="단위테스트 / 테스트 케이스 세분화하기&#10;&#10;테스트 케이스는 경계값을 나눠서 테스트 해야한다.&#10;예를 들어 0~2범위라면 0인 값과 2인값에서 테스트를 하고 예외처리에 대해서도 고민해야 한다. 이번 코드에선 assertThatThrownBy를 써서 예외를 처리했다." />
+    <MESSAGE value="단위테스트 / 테스트하기 어려운영역&#10;&#10;1 관측할 때마다 다른 값에 의존하는 코드&#10;현재 날짜/시간, 랜덤 값, 전역 변수/함수, 사용자 입력 등&#10;2 외부 세계에 영향을 주는 코드&#10;표준 출력, 메시지 발송, 데이터베이스에 기록하기 등" />
+    <option name="LAST_COMMIT_MESSAGE" value="단위테스트 / 테스트하기 어려운영역&#10;&#10;1 관측할 때마다 다른 값에 의존하는 코드&#10;현재 날짜/시간, 랜덤 값, 전역 변수/함수, 사용자 입력 등&#10;2 외부 세계에 영향을 주는 코드&#10;표준 출력, 메시지 발송, 데이터베이스에 기록하기 등" />
   </component>
 </project>
