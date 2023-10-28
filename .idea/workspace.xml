@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae75a70a-628e-4773-b5c2-f2eaec16974a" name="Changes" comment="단위테스트 / 테스트하기 어려운영역&#10;&#10;1 관측할 때마다 다른 값에 의존하는 코드&#10;현재 날짜/시간, 랜덤 값, 전역 변수/함수, 사용자 입력 등&#10;2 외부 세계에 영향을 주는 코드&#10;표준 출력, 메시지 발송, 데이터베이스에 기록하기 등">
+    <list default="true" id="ae75a70a-628e-4773-b5c2-f2eaec16974a" name="Changes" comment="home 테스트 3번째">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/8.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/build/classes/java/test/sample/unit/CafeKioskTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/classes/java/test/sample/unit/CafeKioskTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/classes/sample.unit.CafeKioskTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/classes/sample.unit.CafeKioskTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/packages/sample.unit.html" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/reports/tests/test/packages/sample.unit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/build/test-results/test/TEST-sample.unit.CafeKioskTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/test-results/test/TEST-sample.unit.CafeKioskTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/unit/CafeKioskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cafekiosk/src/test/java/sample/unit/CafeKioskTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +17,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/Inf_TestcodeLecture-main/cafekiosk">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/cafekiosk">
       <ProjectState />
     </projectState>
@@ -82,17 +74,18 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/-/Downloads/restful-web-services&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "Rebasing home",
+    "last_opened_file_path": "C:/Users/-/Downloads/restful-web-services",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -124,6 +117,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="CafeKioskTest.calculateTotalPrice" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -147,6 +141,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="CafeKioskTest.createOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -170,6 +165,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="CafeKioskTest.createOrderOutsideOpenTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -193,6 +189,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="CafeKioskTest.createOrderWithCurrentTime" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -216,6 +213,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -296,6 +294,7 @@
     <MESSAGE value="단위테스트 / JUnit5로 테스트하기" />
     <MESSAGE value="단위테스트 / 테스트 케이스 세분화하기&#10;&#10;테스트 케이스는 경계값을 나눠서 테스트 해야한다.&#10;예를 들어 0~2범위라면 0인 값과 2인값에서 테스트를 하고 예외처리에 대해서도 고민해야 한다. 이번 코드에선 assertThatThrownBy를 써서 예외를 처리했다." />
     <MESSAGE value="단위테스트 / 테스트하기 어려운영역&#10;&#10;1 관측할 때마다 다른 값에 의존하는 코드&#10;현재 날짜/시간, 랜덤 값, 전역 변수/함수, 사용자 입력 등&#10;2 외부 세계에 영향을 주는 코드&#10;표준 출력, 메시지 발송, 데이터베이스에 기록하기 등" />
-    <option name="LAST_COMMIT_MESSAGE" value="단위테스트 / 테스트하기 어려운영역&#10;&#10;1 관측할 때마다 다른 값에 의존하는 코드&#10;현재 날짜/시간, 랜덤 값, 전역 변수/함수, 사용자 입력 등&#10;2 외부 세계에 영향을 주는 코드&#10;표준 출력, 메시지 발송, 데이터베이스에 기록하기 등" />
+    <MESSAGE value="home 테스트 3번째" />
+    <option name="LAST_COMMIT_MESSAGE" value="home 테스트 3번째" />
   </component>
 </project>
