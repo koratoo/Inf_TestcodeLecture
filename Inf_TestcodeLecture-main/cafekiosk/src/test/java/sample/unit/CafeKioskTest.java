@@ -39,6 +39,7 @@ class CafeKioskTest {
         assertThat(cafeKiosk.getBeverages().get(0).getName()).isEqualTo("아메리카노");
     }
 
+    @DisplayName("음료 0개를 주문하면 에러 메세지가 나타난다.")
     @Test
     void addZeroBeverages(){
         CafeKiosk cafeKiosk = new CafeKiosk();
