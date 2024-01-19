@@ -94,8 +94,11 @@ class CafeKioskTest {
         cafeKiosk.add(americano);
 
         Order order = cafeKiosk.createOrder();
+
         assertThat(order.getBeverages()).hasSize(1);
         assertThat(order.getBeverages().get(0).getName()).isEqualTo("아메리카노");
+
+        //질문1 : 이 테스트가 항상 성공하는 테스트일까요?
     }
 
     @Test
@@ -104,12 +107,14 @@ class CafeKioskTest {
         Americano americano = new Americano();
 
         cafeKiosk.add(americano);
-
+        //답변1 : 이 테스트가 항상 성공하는 테스트일까요? 에 대한 답변
+        //createOrder메서드를 LocalDateTime을 파라미터를 받는 값으로 만들어준다.
         Order order = cafeKiosk.createOrder(LocalDateTime.of(2023,10,13,15,0));
         assertThat(order.getBeverages()).hasSize(1);
         assertThat(order.getBeverages().get(0).getName()).isEqualTo("아메리카노");
     }
 
+    //예외
     @Test
     void createOrderOutsideOpenTime(){
         CafeKiosk cafeKiosk = new CafeKiosk();
