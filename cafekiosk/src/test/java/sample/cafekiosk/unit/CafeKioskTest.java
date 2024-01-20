@@ -1,7 +1,8 @@
-package sample.unit;
+package sample.cafekiosk.unit;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import sample.unit.CafeKiosk;
 import sample.unit.beverage.Americano;
 import sample.unit.beverage.Latte;
 import sample.unit.order.Order;
