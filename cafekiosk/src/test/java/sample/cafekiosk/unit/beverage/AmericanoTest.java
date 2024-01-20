@@ -1,8 +1,6 @@
 package sample.cafekiosk.unit.beverage;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import sample.unit.beverage.Americano;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

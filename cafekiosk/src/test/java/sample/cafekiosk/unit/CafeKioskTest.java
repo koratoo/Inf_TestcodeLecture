@@ -1,17 +1,14 @@
 package sample.cafekiosk.unit;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import sample.unit.CafeKiosk;
-import sample.unit.beverage.Americano;
-import sample.unit.beverage.Latte;
-import sample.unit.order.Order;
+import sample.cafekiosk.unit.beverage.Americano;
+import sample.cafekiosk.unit.beverage.Latte;
+import sample.cafekiosk.unit.order.Order;
 
 import java.time.LocalDateTime;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 
 class CafeKioskTest {
 
