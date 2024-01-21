@@ -21,5 +21,6 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     //2. 미래에 어떤 형태로 변형될 것인가?
 
 
+    List<Product> findAllByProductNumberIn(List<String> productNumbers);
 
 }

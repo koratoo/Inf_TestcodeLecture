@@ -28,6 +28,6 @@ public class Order extends BaseEntity {
 
     private LocalDateTime registeredDateTime;
 
-    @OneToMany(mappedBy = "orders", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderProduct> orderProducts = new ArrayList<>();
 }

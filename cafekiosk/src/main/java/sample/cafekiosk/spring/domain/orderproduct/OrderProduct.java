@@ -1,5 +1,6 @@
 package sample.cafekiosk.spring.domain.orderproduct;
 
+import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,9 +11,9 @@ import sample.cafekiosk.spring.domain.product.Product;
 import javax.persistence.*;
 
 @Getter
-@NoArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
-public class OrderProduct extends BaseEntity {
+public class OrderProduct {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
