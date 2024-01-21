@@ -65,9 +65,9 @@ class ProductRepositoryTest {
 
     }
 
-    @DisplayName("원하는 판매상태를 가진 상품들을 조회한다.")
+    @DisplayName("상품번호 리스트로 상품을 조회한다.")
     @Test
-    void findAllBySellingStatusIn() {
+    void findAllByProductNumberIn() {
         //given
         Product product1 = Product.builder()
                 .productNumber("001")
@@ -94,7 +94,7 @@ class ProductRepositoryTest {
         productRepository.saveAll(List.of(product1,product2,product3));
 
         //when
-        List<Product> products = productRepository.findAllBySellingStatusIn(List.of(SELLING,HOLD));
+        List<Product> products = productRepository.findAllByProductNumberIn(List.of("001","002"));
 
         //then
         assertThat(products).hasSize(2)
