@@ -6,9 +6,6 @@ import sample.cafekiosk.spring.domain.product.Product;
 import sample.cafekiosk.spring.domain.product.ProductSellingStatus;
 import sample.cafekiosk.spring.domain.product.ProductType;
 
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-
 @Getter
 public class ProductResponse {
 
