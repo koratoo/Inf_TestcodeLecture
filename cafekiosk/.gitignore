@@ -37,3 +37,7 @@ out/
 .vscode/
 /build/
 /.gradle/
+build\
+.gradle\
+.bin
+.lock
