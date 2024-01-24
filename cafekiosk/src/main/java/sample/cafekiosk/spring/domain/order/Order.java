@@ -19,7 +19,6 @@ import java.util.stream.Collectors;
 @Entity
 public class Order extends BaseEntity {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
