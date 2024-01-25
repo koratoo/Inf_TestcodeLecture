@@ -64,24 +64,22 @@ public class OrderService {
     }
 
     private static Map<String, Long> createCountingMapBy(List<String> stockProductNumbers) {
-        Map<String, Long> productCountingMap = stockProductNumbers.stream()
+
+        return stockProductNumbers.stream()
                 .collect(Collectors.groupingBy(p->p, Collectors.counting()));
-        return productCountingMap;
     }
 
     private Map<String, Stock> createStockMapBy(List<String> stockProductNumbers) {
         List<Stock> stocks = stockRepository.findAllByProductNumberIn(stockProductNumbers);
-        Map<String, Stock> stockMap = stocks.stream()
+        return stocks.stream()
                 .collect(Collectors.toMap(Stock::getProductNumber, s->s));
-        return stockMap;
     }
 
     private static List<String> extractStockProductNumbers(List<Product> products) {
-        List<String> stockProductNumbers = products.stream()
+        return products.stream()
                 .filter(product -> ProductType.containsStockType(product.getType()))
                 .map(Product::getProductNumber)
                 .collect(Collectors.toList());
-        return stockProductNumbers;
     }
 
     private List<Product> findProductsBy(List<String> productNumbers) {
