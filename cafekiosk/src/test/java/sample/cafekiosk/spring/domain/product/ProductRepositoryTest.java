@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
+import sample.cafekiosk.spring.domain.stock.Stock;
+import sample.cafekiosk.spring.domain.stock.StockRepository;
 
 import java.util.List;
 
@@ -106,45 +108,43 @@ class ProductRepositoryTest {
 
     }
 
-    @DisplayName("상품번호 리스트로 상품을 조회한다.")
+    @DisplayName("최신 상품번호를 조회한다.")
     @Test
-    void findAllByProductNumberIn() {
+    void findLatestProductNumber() {
         //given
-        Product product1 = Product.builder()
-                .productNumber("001")
-                .type(HANDMADE)
-                .sellingStatus(SELLING)
-                .name("아메리카노")
-                .price(4000)
-                .build();
-        Product product2 = Product.builder()
-                .productNumber("002")
-                .type(HANDMADE)
-                .sellingStatus(HOLD)
-                .name("카페라떼")
-                .price(4500)
-                .build();
-        Product product3 = Product.builder()
-                .productNumber("003")
-                .type(HANDMADE)
-                .sellingStatus(STOP_SELLING)
-                .name("팥빙수")
-                .price(7000)
-                .build();
+        String targetProductNumber = "003";
+        Product product1 = createProduct("001", HANDMADE, HOLD, "아메리카노", 3000);
+        Product product2 = createProduct("002", HANDMADE, HOLD, "카페라떼", 3500);
+        Product product3 = createProduct("003", HANDMADE, HOLD, "카페모카", 4000);
 
         productRepository.saveAll(List.of(product1,product2,product3));
 
         //when
-        List<Product> products = productRepository.findAllByProductNumberIn(List.of("001","002"));
+        String latestProductNumber = productRepository.findLatestProductNumber();
 
         //then
-        assertThat(products).hasSize(2)
-                .extracting("productNumber", "name", "sellingStatus")
-                .containsExactlyInAnyOrder(
-                        tuple("001", "아메리카노", SELLING),
-                        tuple("002", "카페라떼" , HOLD)
-                );
+        assertThat(latestProductNumber).isEqualTo(targetProductNumber);
 
+    }
+
+    @DisplayName("가장 마지막으로 저장한 상품의 상품번호를 읽어올 때, 상품이 하나도 없는 경우에는 null을 반환한다.")
+    @Test
+    void findLatestProductNumberWhenProductIsEmpty() {
+        //when
+        String latestProductNumber = productRepository.findLatestProductNumber();
+
+        //then
+        assertThat(latestProductNumber).isNull();
+    }
+
+    private Product createProduct(String productNumber, ProductType type, ProductSellingStatus sellingStatus, String name, int price) {
+        return Product.builder()
+                .productNumber(productNumber)
+                .type(type)
+                .sellingStatus(sellingStatus)
+                .name(name)
+                .price(price)
+                .build();
     }
 
 }

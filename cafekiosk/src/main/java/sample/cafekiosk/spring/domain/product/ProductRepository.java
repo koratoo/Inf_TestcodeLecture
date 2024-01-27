@@ -10,6 +10,7 @@ import java.util.List;
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
     //query method
+
     /**
      * select *
      * from product
@@ -26,5 +27,6 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
     //가장 마지막에 등록된 상품의 번호
     @Query(value = "select p.product_number from product p order by id desc limit 1", nativeQuery = true)
-    Product findLatestProduct();
+    String findLatestProductNumber();
+
 }
