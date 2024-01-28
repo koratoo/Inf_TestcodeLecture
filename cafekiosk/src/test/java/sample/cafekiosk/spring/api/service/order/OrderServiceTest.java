@@ -36,6 +36,7 @@ class OrderServiceTest {
 
     @Autowired
     private OrderRepository orderRepository;
+
     @Autowired
     private ProductRepository productRepository;
 
