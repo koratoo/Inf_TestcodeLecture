@@ -56,17 +56,18 @@ class ProductServiceTest {
 
         // when
         ProductResponse productResponse = productService.createProduct(request);
-        List<Product> products = productRepository.findAllByProductNumberIn(List.of("001"));
 
         // then
         assertThat(productResponse.getProductNumber()).isEqualTo("002");
 
 
         //TODO : 저장 로직 구현
-        assertThat(products).hasSize(1)
-                .extracting("productNumber", "name", "sellingStatus")
+        List<Product> products = productRepository.findAll();
+        assertThat(products).hasSize(2)
+                .extracting("productNumber", "type", "sellingStatus", "name", "price")
                 .contains(
-                        tuple("001", "아메리카노", SELLING)
+                        tuple("001", HANDMADE, SELLING, "아메리카노", 4000),
+                        tuple("002", HANDMADE, SELLING, "카푸치노", 5000)
                 );
     }
 
@@ -85,6 +86,12 @@ class ProductServiceTest {
 
         // then
         assertThat(productResponse.getProductNumber()).isEqualTo("001");
+        List<Product> products = productRepository.findAll();
+        assertThat(products).hasSize(1)
+                .extracting("productNumber", "type", "sellingStatus", "name", "price")
+                .contains(
+                        tuple("002", HANDMADE, SELLING, "카푸치노", 5000)
+                );
 
     }
 
